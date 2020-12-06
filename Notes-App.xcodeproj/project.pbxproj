@@ -13,6 +13,8 @@
 		8BED5C54257D6B5800A2AFB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BED5C52257D6B5800A2AFB0 /* Main.storyboard */; };
 		8BED5C56257D6B5C00A2AFB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BED5C55257D6B5C00A2AFB0 /* Assets.xcassets */; };
 		8BED5C59257D6B5C00A2AFB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BED5C57257D6B5C00A2AFB0 /* LaunchScreen.storyboard */; };
+		8BED5C62257D6D0B00A2AFB0 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BED5C61257D6D0B00A2AFB0 /* Note.swift */; };
+		8BED5C65257D7AF600A2AFB0 /* NoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BED5C64257D7AF600A2AFB0 /* NoteViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		8BED5C55257D6B5C00A2AFB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8BED5C58257D6B5C00A2AFB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8BED5C5A257D6B5C00A2AFB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BED5C61257D6D0B00A2AFB0 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		8BED5C64257D7AF600A2AFB0 /* NoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				8BED5C55257D6B5C00A2AFB0 /* Assets.xcassets */,
 				8BED5C57257D6B5C00A2AFB0 /* LaunchScreen.storyboard */,
 				8BED5C5A257D6B5C00A2AFB0 /* Info.plist */,
+				8BED5C61257D6D0B00A2AFB0 /* Note.swift */,
+				8BED5C64257D7AF600A2AFB0 /* NoteViewController.swift */,
 			);
 			path = "Notes-App";
 			sourceTree = "<group>";
@@ -140,6 +146,8 @@
 				8BED5C51257D6B5800A2AFB0 /* ViewController.swift in Sources */,
 				8BED5C4D257D6B5800A2AFB0 /* AppDelegate.swift in Sources */,
 				8BED5C4F257D6B5800A2AFB0 /* SceneDelegate.swift in Sources */,
+				8BED5C65257D7AF600A2AFB0 /* NoteViewController.swift in Sources */,
+				8BED5C62257D6D0B00A2AFB0 /* Note.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
