@@ -15,21 +15,15 @@ class ViewController: UITableViewController {
         reload()
     }
     
-    @IBAction func deleteNote() {
-        
-        print(tableView.indexPathForSelectedRow!.row)
-    }
-    
-    @objc func respondToSwipeGesture() {
-        print("swiped left on \(String(describing: tableView.indexPathForSelectedRow?.row))")
+    @objc func respondToSwipeGesture(sender: UISwipeGestureRecognizer) {
+        print("swiped left on \(sender.view!.tag)")
+        if NoteManager.main.delete(note: notes[sender.view!.tag]) {
+            reload()
+        }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let swipe = UISwipeGestureRecognizer(target: self, action: #selector(respondToSwipeGesture))
-        swipe.direction = .left
-        self.view.addGestureRecognizer(swipe)
         reload()
     }
     
@@ -49,6 +43,11 @@ class ViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "NoteCell", for: indexPath)
         cell.textLabel?.text = notes[indexPath.row].contents
+        cell.textLabel?.isUserInteractionEnabled = true
+        let swipe = UISwipeGestureRecognizer(target: self, action: #selector(respondToSwipeGesture))
+        swipe.direction = .left
+        cell.textLabel?.addGestureRecognizer(swipe)
+        cell.textLabel?.tag = indexPath.row
         return cell
     }
     
